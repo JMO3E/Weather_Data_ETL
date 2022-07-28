@@ -4,9 +4,9 @@ from LoadData import data_load
 
 
 # ------------
-# ETL Pipeline
+# Weather ETL Pipeline
 # ------------
-def etl():
+def run_weather_etl():
     print("\n")
     print("ETL Pipeline\n")
 
@@ -27,5 +27,5 @@ def etl():
 
 
 if __name__ == '__main__':
-    etl()
+    run_weather_etl()
 

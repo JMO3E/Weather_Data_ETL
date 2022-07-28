@@ -1,18 +1,17 @@
 import sqlalchemy
-from sqlalchemy.orm import sessionmaker
 import sqlite3
 
-DATABASE_LOCATION = "sqlite:///weather_raw.sqlite"
+DATABASE_LOCATION = "sqlite:///weather_data.sqlite"
 
 
 # ------------
-# This function is used to edit the data we extracted
+# This function is used to store the data
 # ------------
 def data_load(data):
 
     # Creating the engine
     engine = sqlalchemy.create_engine(DATABASE_LOCATION)
-    conn = sqlite3.connect('weather.sqlite')
+    conn = sqlite3.connect('weather_data.sqlite')
     cursor = conn.cursor()
 
     sql_query = """
