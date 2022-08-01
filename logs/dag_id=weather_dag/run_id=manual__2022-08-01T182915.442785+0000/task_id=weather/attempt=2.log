@@ -1,0 +1,33 @@
+[2022-08-01 18:30:25,837] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: weather_dag.weather manual__2022-08-01T18:29:15.442785+00:00 [queued]>
+[2022-08-01 18:30:25,910] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: weather_dag.weather manual__2022-08-01T18:29:15.442785+00:00 [queued]>
+[2022-08-01 18:30:25,919] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-01 18:30:25,922] {taskinstance.py:1377} INFO - Starting attempt 2 of 2
+[2022-08-01 18:30:25,924] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-01 18:30:26,025] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): weather> on 2022-08-01 18:29:15.442785+00:00
+[2022-08-01 18:30:26,057] {standard_task_runner.py:52} INFO - Started process 280 to run task
+[2022-08-01 18:30:26,093] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'weather_dag', 'weather', 'manual__2022-08-01T18:29:15.442785+00:00', '--job-id', '73', '--raw', '--subdir', 'DAGS_FOLDER/weather_dag.py', '--cfg-path', '/tmp/tmp9j7cn0jp', '--error-file', '/tmp/tmp8vkzdr98']
+[2022-08-01 18:30:26,110] {standard_task_runner.py:80} INFO - Job 73: Subtask weather
+[2022-08-01 18:30:26,945] {task_command.py:371} INFO - Running <TaskInstance: weather_dag.weather manual__2022-08-01T18:29:15.442785+00:00 [running]> on host 609638d3e31f
+[2022-08-01 18:30:27,331] {taskinstance.py:1589} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=***@example.com
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=weather_dag
+AIRFLOW_CTX_TASK_ID=weather
+AIRFLOW_CTX_EXECUTION_DATE=2022-08-01T18:29:15.442785+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-08-01T18:29:15.442785+00:00
+[2022-08-01 18:30:27,360] {logging_mixin.py:115} INFO - ETL Pipeline
+[2022-08-01 18:30:27,361] {logging_mixin.py:115} INFO - Extraction stage started...
+[2022-08-01 18:30:27,372] {logging_mixin.py:115} INFO - url done
+[2022-08-01 18:30:27,843] {logging_mixin.py:115} INFO - Transform stage started...
+[2022-08-01 18:30:27,871] {logging_mixin.py:115} INFO - Data is valid, proceed to load stage.
+[2022-08-01 18:30:27,879] {logging_mixin.py:115} INFO - Load stage started...
+[2022-08-01 18:30:27,892] {logging_mixin.py:115} INFO - Database open successfully
+[2022-08-01 18:30:28,041] {logging_mixin.py:115} INFO - inside
+[2022-08-01 18:30:28,045] {logging_mixin.py:115} INFO - Database close successfully.
+[2022-08-01 18:30:28,073] {python.py:173} INFO - Done. Returned value was: None
+[2022-08-01 18:30:28,225] {taskinstance.py:1415} INFO - Marking task as SUCCESS. dag_id=weather_dag, task_id=weather, execution_date=20220801T182915, start_date=20220801T183025, end_date=20220801T183028
+[2022-08-01 18:30:28,461] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-08-01 18:30:28,787] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
