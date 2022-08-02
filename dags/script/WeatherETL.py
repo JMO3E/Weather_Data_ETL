@@ -52,7 +52,7 @@ def run_weather_etl():
     # ----------------------------------------------
 
     # Token
-    token = "6090c434cedb4722960192453222607"
+    token = ""
 
     print("\n")
     print("ETL Pipeline\n")
